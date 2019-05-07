@@ -1,0 +1,36 @@
+:root {
+    --c-darkgrey: rgba(68, 68, 68, 1);
+    --c-mediumgrey: rgba(93, 110, 106, 1);
+    --c-softgrey: rgba(218, 218, 218, 1);
+    --c-grey: rgba(153, 153, 153, 1);
+    --c-other-grey: rgba(155, 178, 174, 0.2);
+
+    --c-bg-grey: rgba(248, 248, 248, 1);
+    --c-white: rgba(255, 255, 255, 1);
+    --c-green: rgba(11, 212, 164, 1);
+    --c-blue: rgba(12, 183, 245, 1);
+
+    --ff-open: 'Open Sans', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
+}
+
+$transition: 0.5s linear;
+$transition-form: 0.75s ease-out 100ms;
+
+$blue: rgba(12, 183, 245, 1);
+$green: rgba(11, 212, 164, 1);
+$softgrey: rgba(218, 218, 218, 1);
+
+$red:rgba(208, 2, 27, 1);
+$lightblue: rgba(2, 180, 208, 1);
+$darkblue: rgba(85, 2, 208, 1);
+$royalblue: rgba(2, 75, 208, 1);
+$purple: rgba(199, 2, 208, 1);
+$lightgreen: rgba(2, 208, 171, 1);
+$applegreen: rgba(71, 208, 2, 1);
+$yellow: rgba(201, 208, 2, 1);
+$orange:rgba(208, 146, 2, 1);
+
+
+$colors: $red, $lightblue, $darkblue, $royalblue, $purple, $lightgreen, $applegreen, $yellow, $orange;
+$colorsLength: length($colors);

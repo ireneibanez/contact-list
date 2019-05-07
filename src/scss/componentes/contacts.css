@@ -1,0 +1,64 @@
+.contacts {
+  border-right: 1px solid var(--c-softgrey);
+}
+
+.contacts__finder__input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: rem(8px) rem(16px);
+  margin: rem(24px) rem(18px);
+  height: rem(35px);
+  border: 1px solid var(--c-softgrey);
+  border-radius: rem(17.5px);
+}
+
+.contacts__finder__icon {
+  position: absolute;
+  top: rem(34px);
+  left: rem(450px);
+}
+
+.contacts__people__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: rem(10px);
+  font-family: var(--ff-open);
+  font-size: rem(15px);
+  font-weight: 400;
+  color: var(--c-darkgrey);
+}
+
+.contacts__people__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: rem(37px);
+  width: 100%;
+  cursor: pointer;
+  margin: rem(15px), 0;
+}
+
+.contacts__people__list li:active {
+  background-color: rgba(155, 178, 174, 0.2);
+}
+
+.contacts__people__list li:hover {
+  font-weight: 600;
+}
+/*# sourceMappingURL=contacts.css.map */

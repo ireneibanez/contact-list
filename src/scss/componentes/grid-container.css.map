@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,eAAe;EACtC,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "grid-container.scss"
+    ],
+    "names": [],
+    "file": "grid-container.css"
+}

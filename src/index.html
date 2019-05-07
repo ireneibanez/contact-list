@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto" rel="stylesheet">
+</head>
+<body>
+   <main>
+       <div class="wrapper">
+            <div class="menu">
+                <ul class="menu__list list">
+                    <li>
+                        <button type="button" class="list__btn" id="btn-all">Todos los contactos</button>
+                    </li>
+                    <li>
+                        <button type="button" class="list__btn list__btn--separate" id="btn-favorites">Favoritos</button>
+                    </li>
+                    <li>
+                        <button type="button" class="list__btn" id="btn-friends">Amigos</button>
+                    </li>
+                    <li>
+                        <button type="button" class="list__btn" id="btn-family">Familia</button>
+                    </li>
+                    <li>
+                        <button type="button" class="list__btn" id="btn-job">Trabajo</button>
+                    </li>
+                </ul>  
+            </div>
+            <div class="contacts">
+                <div class="contacts__finder">
+                    <input class="contacts__input" placeholder="Buscar" id="contacts__finder">
+                    <svg width="17" height="16" class="icon">       
+                        <image href="../icons/zoom.svg" height="16" width="17" class="icon">
+                    </svg>
+                </div>
+                <div class="contacts__people" id="users-list">
+                    <ul class="contacts__list">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ppal">
+                <div class="ppal__header header">
+                    <div class="header__logo" id="header-logo">
+                        <p class="header__letter" id="header-letter"></p>
+                    </div>
+                    <div class="header__name">
+                        <h1 id="header-name"></h1>
+                        <p id="header-group"></p>
+                    </div>
+                    
+                </div>
+                <div class="ppal__info">
+                    <div class="ppal__phone">
+                        <svg width="17" height="16" class="icon">       
+                                <image href="../icons/call-answer.svg" height="16" width="17" class="icon">
+                        </svg>
+                        <p id="ppal-phone">Teléfono</p>
+                    </div>
+
+                    <div class="ppal__email">
+                        <svg width="17" height="16" class="icon">       
+                            <image href="../icons/message-closed-envelope.svg" height="16" width="17" class="icon">
+                        </svg>
+                        <p id="ppal-email">Correo</p>
+                    </div>    
+                </div>
+                <div class="ppal__actions">
+                    <button type="button" class="ppal__btn-edit">Editar</button>
+                    <button type="button" class="ppal__btn-more">     
+                        <svg width="17" height="16" class="icon">       
+                            <image href="../icons/plus.svg" height="16" width="17" class="icon">
+                        </svg>
+                    </button>
+                </div>
+       </div>
+       <form class="form" id="form-edit">
+            <h1>Editar contacto</h1>
+            <div class="form__fields">
+                <label for="edit-name">Nombre</label>
+                <input type="text" id="edit-name">
+            </div>
+            <div class="form__fields">
+                <label for="edit-surname">Apellidos</label>
+                <input type="text" id="edit-surname">
+            </div>
+            <div class="form__fields form__fields--bg-dark">
+                <label for="edit-email">Correo electrónico</label>
+                <input type="text" id="edit-email">
+            </div>
+            <div class="form__fields form__fields--bg-dark">
+                <label for="edit-phone">Teléfono</label>
+                <div class="form__fields--horizontal">
+                    <select name="País" id="edit-country">
+                        <option value="españa">España</option>
+                        <option value="francia">Francia</option>
+                    </select>
+                    <input type="text" id="edit-phone" class="form__phone">
+                </div>
+            </div>
+            <div class="form__fields form__fields--border">
+                <label>Grupo</label>
+                <select name="Grupo" id="edit-group">
+                    <option value="favoritos">Favoritos</option>
+                    <option value="amigos">Amigos</option>
+                    <option value="familia">Familia</option>
+                    <option value="trabajo">Trabajo</option>
+                </select> 
+            </div>
+            <div class="form__btns">
+                <button type="submit" class="btn-submit" id="updateBtn">Actualizar</button>
+                <button type="button" class="btn-close" id="btn-close-edit">X</button>
+            </div> 
+
+        </form>
+
+        <form class="form" id="form-new">
+                <h1>Añadir contacto</h1>
+                <div class="form__fields">
+                    <label for="new-name">Nombre</label>
+                    <input type="text" id="new-name">
+                </div>
+                <div class="form__fields">
+                    <label for="new-surname">Apellidos</label>
+                    <input type="text" id="new-surname">
+                </div>
+                <div class="form__fields form__fields--bg-dark">
+                    <label for="new-email">Correo electrónico</label>
+                    <input type="text" id="new-email">
+                </div>
+                <div class="form__fields form__fields--bg-dark">
+                    <label for="new-phone">Teléfono</label>
+                    <div class="form__fields--horizontal">
+                        <select name="País" id="new-country">
+                            <option value="spain">España</option>
+                            <option value="france">Francia</option>
+                        </select>
+                        <input type="text" id="new-phone">
+                    </div>
+                </div>
+                <div class="form__fields form__fields--border">
+                    <label for="new-group">Grupo</label>
+                    <select name="Grupo" id="new-group">
+                        <option value="favoritos">Favoritos</option>
+                        <option value="amigos">Amigos</option>
+                        <option value="familia">Familia</option>
+                        <option value="trabajo">Trabajo</option>
+                    </select> 
+                </div>
+                <div class="form__btns">
+                    <button type="submit" class="btn-submit btn-submit--green" id="addBtn">Añadir</button>
+                    <button type="button" class="btn-close" id="btn-close-add">X</button>
+                </div> 
+    
+            </form>
+        
+   </main>
+</body>
+</html>

@@ -1,0 +1,71 @@
+.form {
+  position: absolute;
+  z-index: 100;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: rem(24px 29px 24px 23px);
+  width: rem(334px);
+  border: 1px solid var(--c-softgrey);
+  background-color: var(--c-white);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translate(-100%, -100%) opacity(0);
+          transform: translate(-100%, -100%) opacity(0);
+  -webkit-transition: -webkit-transform 300ms, -webkit-box-shadow 500ms linear 200ms;
+  transition: -webkit-transform 300ms, -webkit-box-shadow 500ms linear 200ms;
+  transition: transform 300ms, box-shadow 500ms linear 200ms;
+  transition: transform 300ms, box-shadow 500ms linear 200ms, -webkit-transform 300ms, -webkit-box-shadow 500ms linear 200ms;
+}
+
+.form:active {
+  -webkit-transform: translate(100%, 100%) opacity(1);
+          transform: translate(100%, 100%) opacity(1);
+}
+
+.form h1 {
+  margin-bottom: rem(20px);
+  color: var(--c-darkgrey);
+  font-family: var(--ff-open);
+  font-weight: 700;
+  font-size: rem(18px);
+}
+
+.form__user-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__user-name, .form__user-surname, .form__email, .form__phone, .form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: rem(15px);
+}
+
+.form__user-name label, .form__user-surname label, .form__email label, .form__phone label, .form__group label {
+  color: var(--c-darkgrey);
+  font-size: rem(15px);
+  font-family: var(--ff-open);
+}
+
+.form__user-name input, .form__user-surname input, .form__email input, .form__phone input, .form__group input {
+  height: rem(37px);
+  border: 1px solid var(--c-softgrey);
+}
+/*# sourceMappingURL=form.css.map */

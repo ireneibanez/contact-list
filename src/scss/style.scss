@@ -1,0 +1,10 @@
+@import "./partials/_reset.css";
+@import "./partials/sass-to-rem";
+@import "./partials/variables";
+@import "./partials/mixins";
+
+@import "./componentes/grid-container.scss";
+@import "./componentes/menu.scss";
+@import "./componentes/contacts.scss";
+@import "./componentes/ppal.scss";
+@import "./componentes/form.scss";

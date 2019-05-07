@@ -1,0 +1,58 @@
+.ppal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: rem(39px 148px 38px 45px);
+  height: rem(144px);
+  border-bottom: 1px solid var(--c-softgrey);
+  padding-left: rem(48px);
+}
+
+.ppal__header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: rem(25px);
+  height: rem(67px);
+  width: rem(67px);
+  border-radius: 50px;
+  background-color: #d0021b;
+}
+
+.ppal__header .header__logo__letter {
+  font-family: var(--ff-open);
+  font-size: rem(45px);
+  font-weight: 300;
+  color: var(--c-white);
+}
+
+.ppal__header .header__name h1 {
+  margin-bottom: rem(15px);
+  font-family: var(--ff-open);
+  font-weight: 300;
+  font-size: rem(32px);
+  color: var(--c-darkgrey);
+}
+
+.ppal__header .header__name p {
+  font-family: var(--ff-open);
+  font-weight: 400;
+  font-size: rem(14px);
+  color: var(--c-softgrey);
+}
+
+.ppal__info {
+  height: rem(144px);
+  border-bottom: 1px solid var(--c-softgrey);
+}
+/*# sourceMappingURL=ppal.css.map */

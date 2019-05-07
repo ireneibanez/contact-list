@@ -1,0 +1,28 @@
+@mixin btn($color) {
+    padding: 11px 23px;
+    height: 42px;
+    border: 0;
+    border-radius: 4px;
+    font-family: var(--ff-open);
+    font-weight: 700;
+    color: var(--c-white);
+    background-color: $color;
+    &:hover{
+       background-color: darken($color, 5%); 
+       transition: $transition;
+    }
+}
+
+@mixin titles-h1 {
+    margin-bottom: rem(20px);
+    color: var(--c-darkgrey);
+    font-family: var(--ff-open);
+    font-weight: 700;
+    font-size: rem(18px);
+}
+
+@mixin input {
+    font-family: var(--ff-open);
+    font-size: 15px;
+    color: var(--c-darkgrey);
+}

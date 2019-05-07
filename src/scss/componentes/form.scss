@@ -1,0 +1,91 @@
+.form {
+    position: fixed;
+    top: 0;
+    right: rem(-334px);
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    padding-top: rem(24px);
+    width: rem(334px);
+    border: 1px solid var(--c-softgrey);
+    background-color: var(--c-white);
+    opacity: 0;
+    transition: $transition-form;
+    overflow-x: hidden;
+    &.visible {
+        right: 0;
+        opacity: 1;
+    }
+
+    h1 {
+        padding: rem(0 26px); 
+        @include titles-h1;
+    }
+    
+    &__fields{
+        display: flex;
+        flex-direction: column; 
+        padding: rem(10px 26px);
+
+        label, option {
+            margin-bottom: rem(4px);
+            color: var(--c-darkgrey);
+            font-size: rem(15px);
+            font-family: var(--ff-open);
+        }
+        input {
+            padding: 0 5px;
+        }
+
+        input, select, option{
+            @include input;
+            height: rem(37px);
+            border: 1px solid var(--c-softgrey); 
+            background-color: var(--c-white);  
+        }
+        &--horizontal {
+            display: flex;
+            justify-content: space-between;
+        }
+        &--bg-dark {
+            padding: rem(26px);
+            background-color: var(--c-bg-grey);
+            border-top: 0.5px solid var(--c-softgrey);
+            border-bottom: 0.5px solid var(--c-softgrey);
+        }
+        &--border {
+            padding: rem(26px);
+            border-bottom: 1px solid var(--c-softgrey);
+        }
+    }
+    &__phone {
+        width: calc(100% - 20px);
+    }
+    .form__fields > div > select {
+        margin-right: rem(8px);
+    }
+    &__btns{
+        display: flex;
+        flex-direction: column; 
+        padding: rem(26px);
+        height: rem(203px);        
+        .btn-submit {
+            @include btn($blue);
+            width: rem(122px);
+            margin-bottom: rem(56px);
+            &--green {
+                @include btn($green);
+                width: rem(97px);
+            }
+        }
+    
+        .btn-close {
+            @include btn($softgrey);
+            width: rem(44px);
+            padding: rem(10px);
+            color: var(--c-darkgrey);
+            font-size: rem(18px);
+        }
+    }
+}
